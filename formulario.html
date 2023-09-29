@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer formulario</title>
+</head>
+<body>
+    <h1>Formulario basico</h1>
+    <form method="post" action="#" enctype="multipart/form-data"> <!-- enctype solo cuando tiene que insertar foto-->
+
+        <fieldset >
+        
+        <legend>Datos personales</legend>
+
+         <label for="nombre">Nombre</label><br/>
+         <input type="text" name="nombreUsuario" id="nombre" readonly value="Juanita"><br/>
+
+         <label for="apellido">Apellido</label><br/>
+         <input type="text" name="apellidoUsuario" id="apellido" size="25"><br/>
+
+         <label>Sexo</label><br/>
+         <input type="radio" name="sexo" value="Femenino" id="fem" checked> 
+         <label for="fem">Femenino</label><br/>
+         <input type="radio" name="sexo" value="Masculino" id="masc">
+         <label for="masc">Masculino</label><br/>
+         <input type="radio" name="sexo" value="Otro" id="otro">
+         <label for="otro">Otro</label><br/>
+
+         <label for="archivo">Incluir Foto</label>
+         <input type="file" name="foto" id="archivo"><br/>
+
+         <label for="tel">Telefono</label><br/>
+         <input type="tel" name="Telefono" id="tel" maxlength="9"><br/>
+
+        </fieldset>
+
+        <fieldset>
+         
+         <legend> Iniciar sesión</legend>
+
+         <label for="usuario">Usuario</label><br/>
+         <input type="text" name="usuario" id="usuario" disabled><br/>
+
+         <label for="email">Correo</label><br/>
+         <input type="text" name="email" id="email" required><br/>
+
+         <label for="contra">Contraseña</label><br/>
+         <input type="password" name="contra" id="contra"><br/>
+
+         <input type="checkbox" name="suscribir"  value= "suscripto" id="suscribir" checked>
+         <label for="suscribir">Suscribirme a las novedades</label><br/>
+
+         <input type="checkbox" name="acuerdo" value="acepta" id="acuerdos" checked>
+         <label for="acuerdos">Acepto terminos y condiciones</label><br/>
+
+         <input type="submit" name="Enviar" value="Guardar cambios">
+         <input type="reset" name="Borrar" value="Borrar datos">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
