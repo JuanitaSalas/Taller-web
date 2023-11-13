@@ -1,0 +1,212 @@
+/* inicio de encabezado */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+:root{
+   --main-color:#d3ad7f;
+   --black:#13131a;
+    --bg:#010103;
+    --border: 0.2rem solid rgba(255,255,255,.3);
+
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none; 
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+html{
+    font-size: 61%;
+    overflow-x:hidden ;
+   scroll-padding-top: 9rem;
+   scroll-behavior: smooth; 
+}
+
+ html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius:5rem ;
+}
+
+ body{
+    background: var(--bg);
+}
+
+
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border); 
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex; /* Agregar display flex para alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+.header .logo img {
+    height: 6rem;
+    border-radius: 50px;
+}
+
+.header .logo h2 {
+    margin-left: 20px; /* Ajusta este valor según sea necesario */
+    font-size: 2rem; /* Ajusta el tamaño de fuente según sea necesario */
+    color: #fff; /* Color del título */
+    text-decoration: none;
+}
+
+.header .logo h2:hover {
+    color: rgb(186, 161, 161);
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+.header .navbar a{
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+section{
+    padding: 2rem 7%;
+}
+.home{
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+    background: url("../../Imagenes/Inicio/fondo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .principal{
+    max-width:60rem;
+}
+.home .principal h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .principal h4{
+    font-size: 1.7rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0 ;
+    color: #eee;
+}
+.fondo-icon{
+    background-color:black;
+}
+
+.links{
+    text-decoration: none;
+}
+/*  fin encabezado */
+
+/* inicio de carrusel */
+.combos {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.d-block{
+    height: auto;
+    width: auto;
+}
+
+
+
+/* fin carrusel */
+
+/* inicio iconos */
+.iconos {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #000;
+}
+
+.icon {
+    text-align: center;
+    margin: 0 2rem; /* Espacio horizontal entre los botones */
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+.icon p {
+    font-size: 1.2rem;
+}
+
+/* fin iconos */
+/* inicio pie de pagina */
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .share{
+    margin-top: 10px;
+}
+
+.share .fab{
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    cursor: pointer; 
+    margin: .3rem;
+}
+
+.footer .share a:hover{
+    color: brown;
+   background-color: rgb(247, 243, 238);
+}
+/* fin pie de pagina */
