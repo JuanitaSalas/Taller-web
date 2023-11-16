@@ -173,6 +173,14 @@ strong{
     justify-content: center ;
     align-items: center;
 }
+
+.gif{
+    width: 100px;
+    height: 80px;
+    margin-left: 45%;
+    mix-blend-mode: multiply; 
+    opacity: 0.7; 
+}
 /*FIN CUERPO*/
 
 /* INICIO PIE DE PAGINA */
