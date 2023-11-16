@@ -104,7 +104,7 @@ section{
     min-height: 70rem;
     display: flex;
     align-items: center;
-    /* background: url(/Imagenes/Petfriendly/perro\ lobo.jpg) no-repeat; no toma la imagen */
+    background-image: url(/Imagenes/Petfriendly/perro\ lobo.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -266,7 +266,7 @@ mix-blend-mode: multiply; /* Agregamos esta línea para que solo la parte blanca
 opacity: 0.7; 
 }
 
-
+/* pie de pagina */
 .footer{
     background-color: #d3ad7f;
     text-align: center;
@@ -274,12 +274,9 @@ opacity: 0.7;
 }
 
 .footer .share{
-   
     margin-top: 5px;
     font-size: 20px;
 }
-
-
 
 .share .fab{
     display: inline-block;
