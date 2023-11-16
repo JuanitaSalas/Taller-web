@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+:root{
+   --main-color:#d3ad7f;
+   --black:#13131a;
+    --bg:#010103;
+    --border: 0.2rem solid rgba(255,255,255,.3);
+
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none; 
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+html{
+    font-size: 61%;
+    overflow-x:hidden ;
+   scroll-padding-top: 9rem;
+   scroll-behavior: smooth; 
+}
+
+ html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius:5rem ;
+}
+
+ body{
+    background: var(--bg);
+}
+
+
+
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border); 
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex; /* Agregar display flex para alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+.header .logo img {
+    height: 6rem;
+    border-radius: 50px;
+}
+
+.header .logo h2 {
+    margin-left: 20px; /* Ajusta este valor según sea necesario */
+    font-size: 2rem; /* Ajusta el tamaño de fuente según sea necesario */
+    color: #fff; /* Color del título */
+}
+
+.header .logo h2:hover {
+    color: rgb(186, 161, 161);
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.header .navbar a{
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    background-image: url('/Imagenes/Formulario/fondoCafe.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 100px 100px 100px;
+}
+
+.home .content{
+    max-width: 600px;
+    color: #080707;
+}
+
+
+
+.servicio{
+    font-size: small;
+}
+.login{
+    background-color: #d3ad7f;
+    border-radius: 5%;
+    margin-top: 10%;
+    padding: 3%;
+}
+.content h2 {
+    font-size: 5rem;
+    letter-spacing: .03em;
+}
+
+.content p{
+    margin: 10px 0  40px;
+    font-size: 1.4rem;
+}
+
+.home .login{
+    position: relative;
+    width: 430px;
+    height: fit-content;
+}
+
+.login h2{
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+}
+
+::placeholder{
+    color: #000000;
+}
+
+.login .input-box{
+    position: relative;
+    width:100% ;
+    height: 40px;
+    margin: 15px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #010103;
+    outline: none;
+    border-radius: 40px;
+}
+
+.input-box label{
+    position:absolute ;
+    top:50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color:#010103;
+    pointer-events: none;
+}
+
+.login legend{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+}
+
+.boton {
+    background-color: transparent;
+    color:black;
+    padding: 10px 20px;
+    border: 2px solid #120f0f;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color:rgb(248, 242, 242);
+
+}
+h2,
+p{
+    color: #fff;
+}
+.footer{
+    background-color:#000;
+    text-align: center;
+    color:#fff;
+}
+
+.footer .share{
+   
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.share .fab{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 47px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin: .3rem;
+    border: 2px solid #fff;
+    transition: all .3s ease-in-out;
+    
+}
+
+.footer .share a:hover{
+    color:#000;
+   background-color:brown;
+   border-color: brown;
+}
